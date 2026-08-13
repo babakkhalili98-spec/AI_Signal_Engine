@@ -1,0 +1,1425 @@
+2026-07-18 13:21:58,841 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 13:21:58,858 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 13:21:58,858 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 13:33:16,849 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 13:33:16,849 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 13:33:16,849 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 13:42:21,342 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 13:42:21,342 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 13:42:21,342 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 14:06:45,710 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 14:06:45,710 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 14:06:45,710 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 14:06:45,720 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 14:06:45,721 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 14:06:47,763 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 181, in initialize
+    self.exchange.connect()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\exchange_client.py", line 55, in connect
+    self.connected = self.provider.connect()
+                     ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'connect'
+2026-07-18 14:06:47,763 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-18 14:06:47,763 | INFO | AI_Signal_Engine | 
+2026-07-18 14:06:47,772 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 14:06:47,772 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-18 14:06:47,772 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:16:02,167 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:16:02,167 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 20:16:02,167 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:16:02,167 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 20:16:02,167 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 20:16:02,183 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 181, in initialize
+    self.exchange.connect()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\exchange_client.py", line 55, in connect
+    self.connected = self.provider.connect()
+                     ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'connect'
+2026-07-18 20:16:02,183 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-18 20:16:02,183 | INFO | AI_Signal_Engine | 
+2026-07-18 20:16:02,183 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:16:02,183 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-18 20:16:02,183 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:26:56,794 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:26:56,794 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 20:26:56,794 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:26:56,794 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 20:26:56,794 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 20:26:56,965 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-18 20:26:56,980 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 211, in initialize
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'recover_open_signals'
+2026-07-18 20:26:56,980 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-18 20:27:02,000 | INFO | AI_Signal_Engine | 
+2026-07-18 20:27:02,000 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:27:02,000 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-18 20:27:02,000 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:34:00,011 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:34:00,011 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 20:34:00,011 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:34:00,011 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 20:34:00,011 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 20:34:00,402 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-18 20:34:00,495 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 211, in initialize
+    self.recovery.recover_open_signals()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\signal_recovery_engine.py", line 1101, in recover_open_signals
+    self.load_open_trades()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\signal_recovery_engine.py", line 96, in load_open_trades
+    trades = self.database.get_open_trades()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 921, in get_open_trades
+    return self.fetchall(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 185, in fetchall
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+2026-07-18 20:34:00,495 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-18 20:34:05,510 | INFO | AI_Signal_Engine | 
+2026-07-18 20:34:05,510 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 20:34:05,510 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-18 20:34:05,510 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:06:45,463 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:06:45,463 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 21:06:45,463 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:06:45,479 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 21:06:45,479 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 21:06:47,151 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 128, in transaction
+    yield
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 156, in execute
+    self.cursor.execute(
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 175, in initialize
+    self.database.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 70, in initialize
+    self.create_tables()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 221, in create_tables
+    self.execute("""
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 154, in execute
+    with self.transaction():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\database_manager.py", line 134, in transaction
+    self.connection.rollback()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'rollback'
+2026-07-18 21:06:47,151 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-18 21:06:47,151 | INFO | AI_Signal_Engine | 
+2026-07-18 21:06:47,151 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:06:47,151 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-18 21:06:47,167 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:12,979 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:12,995 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 21:36:12,995 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:12,995 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-18 21:36:12,995 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-18 21:36:13,355 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | 
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | 
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | 
+2026-07-18 21:36:13,371 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-18 21:36:16,843 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-18 21:36:43,383 | INFO | AI_Signal_Engine | 
+2026-07-18 21:36:43,383 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-18 21:36:43,462 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-18 21:37:13,393 | INFO | AI_Signal_Engine | 
+2026-07-18 21:37:13,393 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-18 21:37:13,487 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-18 21:37:43,407 | INFO | AI_Signal_Engine | 
+2026-07-18 21:37:43,407 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-18 21:37:43,527 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-18 21:38:13,407 | INFO | AI_Signal_Engine | 
+2026-07-18 21:38:15,059 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-18 21:38:15,167 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-18 22:12:59,394 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-18 22:12:59,394 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-18 22:12:59,404 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:31:40,286 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:31:40,286 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 01:31:40,286 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:31:40,286 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 01:31:40,286 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 01:31:40,296 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\providers\nobitex_provider.py", line 37, in connect
+    self.logger.error("Nobitex Offline")
+    ^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'logger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 181, in initialize
+    self.exchange.connect()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\exchange_client.py", line 55, in connect
+    self.connected = self.provider.connect()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\providers\nobitex_provider.py", line 42, in connect
+    self.logger.exception(e)
+    ^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'logger'
+2026-07-19 01:31:40,307 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-19 01:31:40,312 | INFO | AI_Signal_Engine | 
+2026-07-19 01:31:40,312 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:31:40,312 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-19 01:31:40,312 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:40:05,749 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:40:05,749 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 01:40:05,750 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:40:05,751 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 01:40:05,751 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 01:40:05,761 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\providers\nobitex_provider.py", line 37, in connect
+    self.logger.error("Nobitex Offline")
+    ^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'logger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 528, in main
+    engine.startup()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 515, in startup
+    self.run()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 336, in run
+    self.initialize()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 181, in initialize
+    self.exchange.connect()
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\core\exchange_client.py", line 55, in connect
+    self.connected = self.provider.connect()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\providers\nobitex_provider.py", line 42, in connect
+    self.logger.exception(e)
+    ^^^^^^^^^^^
+AttributeError: 'NobitexProvider' object has no attribute 'logger'
+2026-07-19 01:40:05,765 | INFO | AI_Signal_Engine | Saving Final State...
+2026-07-19 01:40:05,766 | INFO | AI_Signal_Engine | 
+2026-07-19 01:40:05,766 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:40:05,767 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE CLOSED
+2026-07-19 01:40:05,767 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,002 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,002 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 01:50:51,002 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,002 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 01:50:51,002 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | 
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | 
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:50:51,012 | INFO | AI_Signal_Engine | 
+2026-07-19 01:50:51,022 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:50:51,042 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:51:21,016 | INFO | AI_Signal_Engine | 
+2026-07-19 01:51:21,017 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:51:21,022 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:51:51,017 | INFO | AI_Signal_Engine | 
+2026-07-19 01:51:51,017 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:51:51,029 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:52:21,018 | INFO | AI_Signal_Engine | 
+2026-07-19 01:52:21,018 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:52:21,025 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:52:51,025 | INFO | AI_Signal_Engine | 
+2026-07-19 01:52:51,025 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:52:51,037 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:53:21,026 | INFO | AI_Signal_Engine | 
+2026-07-19 01:53:21,026 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:53:21,034 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:53:51,028 | INFO | AI_Signal_Engine | 
+2026-07-19 01:53:51,028 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:53:51,030 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:54:21,035 | INFO | AI_Signal_Engine | 
+2026-07-19 01:54:21,035 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:54:21,040 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:54:51,038 | INFO | AI_Signal_Engine | 
+2026-07-19 01:54:51,038 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:54:51,043 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:55:21,042 | INFO | AI_Signal_Engine | 
+2026-07-19 01:55:21,042 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:55:21,042 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.update_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:55:51,045 | INFO | AI_Signal_Engine | 
+2026-07-19 01:55:51,045 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:55:51,049 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:56:21,047 | INFO | AI_Signal_Engine | 
+2026-07-19 01:56:21,047 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:56:21,049 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:56:51,049 | INFO | AI_Signal_Engine | 
+2026-07-19 01:56:51,049 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:56:51,053 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:57:21,051 | INFO | AI_Signal_Engine | 
+2026-07-19 01:57:21,051 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:57:21,051 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:57:51,060 | INFO | AI_Signal_Engine | 
+2026-07-19 01:57:51,096 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:57:51,133 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:58:21,061 | INFO | AI_Signal_Engine | 
+2026-07-19 01:58:21,061 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 01:58:21,061 | ERROR | AI_Signal_Engine | 'SignalRecoveryEngine' object has no attribute 'update_open_signals'
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 310, in process_cycle
+    self.recovery.recover_open_signals()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SignalRecoveryEngine' object has no attribute 'update_open_signals'. Did you mean: 'recover_open_signals'?
+2026-07-19 01:59:00,201 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:00,201 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 01:59:00,201 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:00,204 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 01:59:00,204 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 01:59:02,784 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 01:59:02,787 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 01:59:02,787 | INFO | AI_Signal_Engine | 
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | 
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:02,788 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 01:59:02,789 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 01:59:02,789 | INFO | AI_Signal_Engine | 
+2026-07-19 01:59:02,789 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:00:13,846 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:00:13,846 | INFO | AI_Signal_Engine | 
+2026-07-19 02:00:13,846 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:00:48,519 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:00:48,521 | INFO | AI_Signal_Engine | 
+2026-07-19 02:00:48,521 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:01:21,930 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:01:21,930 | INFO | AI_Signal_Engine | 
+2026-07-19 02:01:21,931 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:01:48,431 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:01:51,936 | INFO | AI_Signal_Engine | 
+2026-07-19 02:01:51,936 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:02:17,424 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:02:21,938 | INFO | AI_Signal_Engine | 
+2026-07-19 02:02:21,938 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:02:46,904 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:02:51,938 | INFO | AI_Signal_Engine | 
+2026-07-19 02:02:51,938 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:03:16,443 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:03:21,940 | INFO | AI_Signal_Engine | 
+2026-07-19 02:03:21,940 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:03:46,284 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:03:51,941 | INFO | AI_Signal_Engine | 
+2026-07-19 02:03:51,941 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:04:17,352 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:04:21,943 | INFO | AI_Signal_Engine | 
+2026-07-19 02:04:21,943 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:04:46,067 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:04:51,944 | INFO | AI_Signal_Engine | 
+2026-07-19 02:04:51,944 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:05:16,390 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:05:21,948 | INFO | AI_Signal_Engine | 
+2026-07-19 02:05:21,948 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:05:47,212 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:05:51,952 | INFO | AI_Signal_Engine | 
+2026-07-19 02:05:51,952 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:06:16,875 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:06:21,957 | INFO | AI_Signal_Engine | 
+2026-07-19 02:06:21,957 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:06:46,807 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:06:51,958 | INFO | AI_Signal_Engine | 
+2026-07-19 02:06:51,958 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:07:16,505 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:07:21,963 | INFO | AI_Signal_Engine | 
+2026-07-19 02:07:21,963 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:07:46,942 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:07:51,964 | INFO | AI_Signal_Engine | 
+2026-07-19 02:07:51,964 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:08:16,945 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:08:21,969 | INFO | AI_Signal_Engine | 
+2026-07-19 02:08:21,969 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:08:46,779 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:08:51,969 | INFO | AI_Signal_Engine | 
+2026-07-19 02:08:51,969 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:09:19,316 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:09:21,970 | INFO | AI_Signal_Engine | 
+2026-07-19 02:09:21,970 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:09:55,303 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:55,303 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 02:09:55,303 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:55,312 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 02:09:55,312 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 02:09:57,013 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | 
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | 
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 02:09:57,018 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:09:57,021 | INFO | AI_Signal_Engine | 
+2026-07-19 02:09:57,021 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:10:59,799 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:10:59,799 | INFO | AI_Signal_Engine | 
+2026-07-19 02:10:59,800 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:11:29,705 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:11:29,803 | INFO | AI_Signal_Engine | 
+2026-07-19 02:11:29,808 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:11:58,276 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:11:59,804 | INFO | AI_Signal_Engine | 
+2026-07-19 02:11:59,805 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:12:25,824 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:12:29,804 | INFO | AI_Signal_Engine | 
+2026-07-19 02:12:29,804 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:12:50,276 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:12:59,806 | INFO | AI_Signal_Engine | 
+2026-07-19 02:12:59,806 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:13:20,571 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:13:29,808 | INFO | AI_Signal_Engine | 
+2026-07-19 02:13:29,808 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:13:50,668 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:13:59,811 | INFO | AI_Signal_Engine | 
+2026-07-19 02:13:59,812 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:14:21,915 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:14:29,814 | INFO | AI_Signal_Engine | 
+2026-07-19 02:14:29,814 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:14:55,460 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:14:59,822 | INFO | AI_Signal_Engine | 
+2026-07-19 02:14:59,822 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:15:20,572 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:15:29,824 | INFO | AI_Signal_Engine | 
+2026-07-19 02:15:29,824 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:16:02,609 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:02,609 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 02:16:02,611 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:02,611 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 02:16:02,611 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 02:16:04,689 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | 
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | 
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | 
+2026-07-19 02:16:04,699 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:16:08,539 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 02:16:34,704 | INFO | AI_Signal_Engine | 
+2026-07-19 02:16:34,704 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:23:55,693 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:55,693 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 02:23:55,693 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:55,693 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 02:23:55,693 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 02:23:57,608 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | 
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | 
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 02:23:57,614 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:23:57,616 | INFO | AI_Signal_Engine | 
+2026-07-19 02:23:57,616 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:35:50,928 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:50,928 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 02:35:50,929 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:50,931 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 02:35:50,931 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 02:35:52,727 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 02:35:52,730 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 02:35:52,731 | INFO | AI_Signal_Engine | 
+2026-07-19 02:35:52,731 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:52,731 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 02:35:52,731 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:52,731 | INFO | AI_Signal_Engine | 
+2026-07-19 02:35:52,732 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:52,732 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 02:35:52,732 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:35:52,732 | INFO | AI_Signal_Engine | 
+2026-07-19 02:35:52,732 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 02:36:56,238 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:56,239 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 02:36:56,239 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:56,241 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 02:36:56,242 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 02:36:57,780 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 02:36:57,783 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 02:36:57,784 | INFO | AI_Signal_Engine | 
+2026-07-19 02:36:57,784 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:57,784 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 02:36:57,784 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:57,785 | INFO | AI_Signal_Engine | 
+2026-07-19 02:36:57,785 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:57,785 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 02:36:57,785 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 02:36:57,786 | INFO | AI_Signal_Engine | 
+2026-07-19 02:36:57,786 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 14:28:03,305 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:03,345 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 14:28:03,345 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:03,350 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 14:28:03,350 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 14:28:05,595 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 14:28:05,595 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 14:28:05,595 | INFO | AI_Signal_Engine | 
+2026-07-19 14:28:05,595 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | 
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:28:05,600 | INFO | AI_Signal_Engine | 
+2026-07-19 14:28:05,603 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 14:46:11,412 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:11,412 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 14:46:11,412 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:11,412 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 14:46:11,412 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | 
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | 
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | 
+2026-07-19 14:46:12,913 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 15:08:05,817 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:05,817 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 15:08:05,818 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:05,820 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 15:08:05,820 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 15:08:06,986 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 15:08:06,986 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 15:08:06,986 | INFO | AI_Signal_Engine | 
+2026-07-19 15:08:06,986 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:06,986 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | 
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | 
+2026-07-19 15:08:06,996 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 15:38:07,344 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:07,344 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 15:38:07,346 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:07,346 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-19 15:38:07,346 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | 
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | 
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | 
+2026-07-19 15:38:08,747 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 16:04:23,505 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 16:04:23,505 | INFO | AI_Signal_Engine | 
+2026-07-19 16:04:23,505 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 16:34:28,020 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-19 16:34:28,020 | INFO | AI_Signal_Engine | 
+2026-07-19 16:34:28,020 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-19 20:40:21,630 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 20:40:21,660 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 20:40:21,660 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 20:43:20,488 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 20:43:20,488 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 20:43:20,488 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 20:47:29,965 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-19 20:47:29,965 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-19 20:47:29,966 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-20 23:31:24,350 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-20 23:31:24,380 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-20 23:31:24,380 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 14:52:06,050 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 14:52:06,103 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 14:52:06,104 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:53,727 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:53,727 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 15:20:53,727 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:53,727 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-21 15:20:53,727 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-21 15:20:55,065 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | 
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | 
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:20:55,069 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:20:55,158 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:21:25,070 | INFO | AI_Signal_Engine | 
+2026-07-21 15:21:25,070 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:21:25,070 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:21:25,070 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:21:25,158 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:21:55,070 | INFO | AI_Signal_Engine | 
+2026-07-21 15:21:55,070 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:21:55,070 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:21:55,070 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:21:55,162 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:22:25,080 | INFO | AI_Signal_Engine | 
+2026-07-21 15:22:25,081 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:22:25,083 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:22:25,084 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:22:25,157 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:22:55,094 | INFO | AI_Signal_Engine | 
+2026-07-21 15:22:55,094 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:22:55,094 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:22:55,094 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:22:55,185 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:23:25,096 | INFO | AI_Signal_Engine | 
+2026-07-21 15:23:25,096 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:23:25,096 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:23:25,096 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:23:25,197 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:23:55,097 | INFO | AI_Signal_Engine | 
+2026-07-21 15:23:55,097 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:23:55,097 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:23:55,097 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:23:55,372 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:24:25,098 | INFO | AI_Signal_Engine | 
+2026-07-21 15:24:25,098 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:24:25,098 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:24:25,098 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:24:25,185 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:24:55,113 | INFO | AI_Signal_Engine | 
+2026-07-21 15:24:55,113 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:24:55,113 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:24:55,113 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:24:55,195 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:25:25,119 | INFO | AI_Signal_Engine | 
+2026-07-21 15:25:25,119 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:25:25,120 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:25:25,123 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:25:25,209 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:25:55,135 | INFO | AI_Signal_Engine | 
+2026-07-21 15:25:55,135 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:25:55,135 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:25:55,135 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:25:55,220 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:26:25,145 | INFO | AI_Signal_Engine | 
+2026-07-21 15:26:25,145 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:26:25,145 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:26:25,145 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:26:25,229 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:26:55,145 | INFO | AI_Signal_Engine | 
+2026-07-21 15:26:55,145 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:26:55,146 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:26:55,146 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:26:55,235 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:27:25,154 | INFO | AI_Signal_Engine | 
+2026-07-21 15:27:25,154 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:27:25,154 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:27:25,154 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:27:25,381 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:27:55,163 | INFO | AI_Signal_Engine | 
+2026-07-21 15:27:55,163 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:27:55,163 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:27:55,163 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:27:55,268 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:28:25,164 | INFO | AI_Signal_Engine | 
+2026-07-21 15:28:25,165 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:28:25,166 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:28:25,167 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:28:25,254 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:28:55,170 | INFO | AI_Signal_Engine | 
+2026-07-21 15:28:55,170 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:28:55,170 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:28:55,170 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:28:55,257 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:29:25,184 | INFO | AI_Signal_Engine | 
+2026-07-21 15:29:25,184 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:29:25,184 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:29:25,184 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:29:25,279 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:29:55,184 | INFO | AI_Signal_Engine | 
+2026-07-21 15:29:55,184 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:29:55,184 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:29:55,184 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:29:55,257 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:30:25,199 | INFO | AI_Signal_Engine | 
+2026-07-21 15:30:25,199 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:30:25,199 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:30:25,199 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:30:25,278 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:30:55,210 | INFO | AI_Signal_Engine | 
+2026-07-21 15:30:55,210 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:30:55,210 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:30:55,210 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:30:55,334 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:31:25,221 | INFO | AI_Signal_Engine | 
+2026-07-21 15:31:25,221 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:31:25,221 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:31:25,221 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:31:25,304 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:31:55,230 | INFO | AI_Signal_Engine | 
+2026-07-21 15:31:55,230 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:31:55,231 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:31:55,231 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:31:55,310 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:32:25,230 | INFO | AI_Signal_Engine | 
+2026-07-21 15:32:25,231 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:32:25,233 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:32:25,234 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:32:25,341 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:32:55,231 | INFO | AI_Signal_Engine | 
+2026-07-21 15:32:55,231 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:32:55,231 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:32:55,231 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:32:55,309 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:33:25,245 | INFO | AI_Signal_Engine | 
+2026-07-21 15:33:25,248 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:33:25,250 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:33:25,250 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:33:25,336 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:33:55,246 | INFO | AI_Signal_Engine | 
+2026-07-21 15:33:55,246 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:33:55,246 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:33:55,246 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:33:55,335 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:34:25,255 | INFO | AI_Signal_Engine | 
+2026-07-21 15:34:25,255 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:34:25,255 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:34:25,255 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:34:25,339 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:34:55,263 | INFO | AI_Signal_Engine | 
+2026-07-21 15:34:55,263 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:34:55,264 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:34:55,265 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:34:55,354 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:35:25,263 | INFO | AI_Signal_Engine | 
+2026-07-21 15:35:25,263 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:35:25,263 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:35:25,263 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:35:25,357 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:35:55,274 | INFO | AI_Signal_Engine | 
+2026-07-21 15:35:55,274 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:35:55,274 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:35:55,274 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:35:55,380 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:36:25,276 | INFO | AI_Signal_Engine | 
+2026-07-21 15:36:25,276 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:36:25,276 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:36:25,276 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:36:25,365 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:36:55,279 | INFO | AI_Signal_Engine | 
+2026-07-21 15:36:55,279 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:36:55,279 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:36:55,279 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:36:55,350 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:37:25,291 | INFO | AI_Signal_Engine | 
+2026-07-21 15:37:25,291 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:37:25,291 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:37:25,291 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:37:25,381 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:37:55,302 | INFO | AI_Signal_Engine | 
+2026-07-21 15:37:55,302 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:37:55,302 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:37:55,302 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:37:55,388 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:40:51,745 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:51,745 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 15:40:51,746 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:51,746 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-21 15:40:51,747 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | 
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,084 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-21 15:40:53,099 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,099 | INFO | AI_Signal_Engine | 
+2026-07-21 15:40:53,099 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,099 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:40:53,099 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:40:53,162 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:41:23,111 | INFO | AI_Signal_Engine | 
+2026-07-21 15:41:23,111 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:41:23,111 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:41:23,111 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:41:23,204 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:41:53,112 | INFO | AI_Signal_Engine | 
+2026-07-21 15:41:53,112 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:41:53,113 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:41:53,113 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:41:53,225 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:42:23,115 | INFO | AI_Signal_Engine | 
+2026-07-21 15:42:23,115 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:42:23,115 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:42:23,115 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:42:23,240 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:42:53,118 | INFO | AI_Signal_Engine | 
+2026-07-21 15:42:53,118 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:42:53,118 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:42:53,118 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:42:53,214 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:43:23,120 | INFO | AI_Signal_Engine | 
+2026-07-21 15:43:23,120 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:43:23,120 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:43:23,120 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:43:23,213 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:43:53,124 | INFO | AI_Signal_Engine | 
+2026-07-21 15:43:53,124 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:43:53,124 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:43:53,124 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:43:53,207 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:44:23,134 | INFO | AI_Signal_Engine | 
+2026-07-21 15:44:23,134 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:44:23,134 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:44:23,134 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:44:23,219 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:44:53,137 | INFO | AI_Signal_Engine | 
+2026-07-21 15:44:53,137 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:44:53,137 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:44:53,137 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:44:53,231 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:45:23,138 | INFO | AI_Signal_Engine | 
+2026-07-21 15:45:23,138 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:45:23,138 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:45:23,138 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:45:23,220 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:45:53,138 | INFO | AI_Signal_Engine | 
+2026-07-21 15:45:53,138 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:45:53,138 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:45:53,138 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:45:53,240 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:46:23,144 | INFO | AI_Signal_Engine | 
+2026-07-21 15:46:23,145 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:46:23,147 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:46:23,147 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:46:23,234 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:46:53,146 | INFO | AI_Signal_Engine | 
+2026-07-21 15:46:53,146 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:46:53,146 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:46:53,146 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:46:53,319 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:47:23,146 | INFO | AI_Signal_Engine | 
+2026-07-21 15:47:23,146 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:47:23,148 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:47:23,148 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:47:23,474 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:47:53,155 | INFO | AI_Signal_Engine | 
+2026-07-21 15:47:53,155 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:47:53,155 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:47:53,155 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:47:53,240 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:48:23,163 | INFO | AI_Signal_Engine | 
+2026-07-21 15:48:23,163 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:48:23,163 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:48:23,163 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:48:23,254 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:48:53,164 | INFO | AI_Signal_Engine | 
+2026-07-21 15:48:53,165 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:48:53,167 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:48:53,167 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:48:53,254 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:49:23,175 | INFO | AI_Signal_Engine | 
+2026-07-21 15:49:23,175 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:49:23,175 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:49:23,175 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:49:23,284 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:49:53,177 | INFO | AI_Signal_Engine | 
+2026-07-21 15:49:53,178 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:49:53,179 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:49:53,179 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:49:53,346 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:50:23,191 | INFO | AI_Signal_Engine | 
+2026-07-21 15:50:23,192 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:50:23,193 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:50:23,193 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:50:23,286 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:50:53,205 | INFO | AI_Signal_Engine | 
+2026-07-21 15:50:53,205 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:50:53,205 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:50:53,205 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:50:53,297 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:51:23,214 | INFO | AI_Signal_Engine | 
+2026-07-21 15:51:23,214 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:51:23,214 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:51:23,214 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:51:23,303 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:51:53,227 | INFO | AI_Signal_Engine | 
+2026-07-21 15:51:53,227 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:51:53,227 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:51:53,227 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:51:53,328 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:52:23,228 | INFO | AI_Signal_Engine | 
+2026-07-21 15:52:23,229 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:52:23,230 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:52:23,230 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:52:23,356 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:52:53,239 | INFO | AI_Signal_Engine | 
+2026-07-21 15:52:53,239 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:52:53,239 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:52:53,239 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:52:53,365 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:53:23,253 | INFO | AI_Signal_Engine | 
+2026-07-21 15:53:23,254 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:53:23,255 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:53:23,256 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:53:23,350 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:53:53,259 | INFO | AI_Signal_Engine | 
+2026-07-21 15:53:53,259 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:53:53,259 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:53:53,259 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:53:53,349 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:54:23,265 | INFO | AI_Signal_Engine | 
+2026-07-21 15:54:23,266 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:54:23,267 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:54:23,268 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:54:23,395 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:54:53,266 | INFO | AI_Signal_Engine | 
+2026-07-21 15:54:53,266 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:54:53,266 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:54:53,266 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:54:53,359 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:55:23,280 | INFO | AI_Signal_Engine | 
+2026-07-21 15:55:23,280 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:55:23,282 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:55:23,282 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:55:23,366 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:55:53,290 | INFO | AI_Signal_Engine | 
+2026-07-21 15:55:53,290 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:55:53,290 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:55:53,290 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:55:53,380 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:56:23,291 | INFO | AI_Signal_Engine | 
+2026-07-21 15:56:23,291 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:56:23,291 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:56:23,291 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:56:23,382 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:56:53,292 | INFO | AI_Signal_Engine | 
+2026-07-21 15:56:53,293 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:56:53,294 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:56:53,294 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:56:53,405 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:57:23,293 | INFO | AI_Signal_Engine | 
+2026-07-21 15:57:23,293 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:57:23,293 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:57:23,293 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:57:23,412 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:57:53,305 | INFO | AI_Signal_Engine | 
+2026-07-21 15:57:53,305 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:57:53,306 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:57:53,306 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:57:53,396 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:58:23,305 | INFO | AI_Signal_Engine | 
+2026-07-21 15:58:23,305 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:58:23,305 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:58:23,305 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:58:23,413 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:58:53,306 | INFO | AI_Signal_Engine | 
+2026-07-21 15:58:53,306 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:58:53,306 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:58:53,306 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:58:53,384 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:59:23,320 | INFO | AI_Signal_Engine | 
+2026-07-21 15:59:23,320 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:59:23,320 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:59:23,320 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:59:23,412 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 15:59:53,325 | INFO | AI_Signal_Engine | 
+2026-07-21 15:59:53,325 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:59:53,325 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 15:59:53,325 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 15:59:53,419 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:00:23,330 | INFO | AI_Signal_Engine | 
+2026-07-21 16:00:23,331 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:00:23,332 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:00:23,332 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:00:23,404 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:00:53,346 | INFO | AI_Signal_Engine | 
+2026-07-21 16:00:53,346 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:00:53,346 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:00:53,346 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:00:53,429 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:01:23,352 | INFO | AI_Signal_Engine | 
+2026-07-21 16:01:23,352 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:01:23,352 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:01:23,352 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:01:23,435 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:01:53,352 | INFO | AI_Signal_Engine | 
+2026-07-21 16:01:53,352 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:01:53,352 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:01:53,352 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:01:53,433 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:02:23,359 | INFO | AI_Signal_Engine | 
+2026-07-21 16:02:23,359 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:02:23,359 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:02:23,359 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:02:23,706 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:02:53,360 | INFO | AI_Signal_Engine | 
+2026-07-21 16:02:53,360 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:02:53,361 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:02:53,361 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:02:53,449 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:03:23,363 | INFO | AI_Signal_Engine | 
+2026-07-21 16:03:23,363 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:03:23,363 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:03:23,363 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:03:23,926 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:03:53,364 | INFO | AI_Signal_Engine | 
+2026-07-21 16:03:53,365 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:03:53,366 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:03:53,367 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:03:53,465 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:04:23,366 | INFO | AI_Signal_Engine | 
+2026-07-21 16:04:23,366 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:04:23,366 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:04:23,366 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:04:23,443 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:04:53,380 | INFO | AI_Signal_Engine | 
+2026-07-21 16:04:53,380 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:04:53,380 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:04:53,380 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:04:53,459 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:05:23,395 | INFO | AI_Signal_Engine | 
+2026-07-21 16:05:23,395 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:05:23,395 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:05:23,395 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:05:23,486 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:05:53,400 | INFO | AI_Signal_Engine | 
+2026-07-21 16:05:53,400 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:05:53,400 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:05:53,400 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:05:53,483 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:06:23,409 | INFO | AI_Signal_Engine | 
+2026-07-21 16:06:23,409 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:06:23,409 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:06:23,409 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:06:23,490 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:06:53,423 | INFO | AI_Signal_Engine | 
+2026-07-21 16:06:53,423 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:06:53,423 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:06:53,423 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:06:53,506 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:07:23,438 | INFO | AI_Signal_Engine | 
+2026-07-21 16:07:23,438 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:07:23,438 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:07:23,438 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:07:23,532 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:07:53,442 | INFO | AI_Signal_Engine | 
+2026-07-21 16:07:53,442 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:07:53,442 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:07:53,442 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:07:53,520 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:08:23,451 | INFO | AI_Signal_Engine | 
+2026-07-21 16:08:23,451 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:08:23,451 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:08:23,451 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:08:23,522 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:08:53,452 | INFO | AI_Signal_Engine | 
+2026-07-21 16:08:53,453 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:08:53,454 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:08:53,454 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:08:53,575 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:09:23,457 | INFO | AI_Signal_Engine | 
+2026-07-21 16:09:23,457 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:09:23,457 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:09:23,457 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:09:23,535 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:09:53,471 | INFO | AI_Signal_Engine | 
+2026-07-21 16:09:53,471 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:09:53,472 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:09:53,473 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:09:53,552 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:10:23,483 | INFO | AI_Signal_Engine | 
+2026-07-21 16:10:23,483 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:10:23,483 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:10:23,483 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:10:23,572 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:10:53,488 | INFO | AI_Signal_Engine | 
+2026-07-21 16:10:53,488 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:10:53,488 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:10:53,488 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:10:53,578 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:11:23,493 | INFO | AI_Signal_Engine | 
+2026-07-21 16:11:23,493 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:11:23,493 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:11:23,493 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:11:23,580 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:11:53,506 | INFO | AI_Signal_Engine | 
+2026-07-21 16:11:53,507 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:11:53,508 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:11:53,508 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:11:53,649 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:12:23,506 | INFO | AI_Signal_Engine | 
+2026-07-21 16:12:23,506 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:12:23,506 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:12:23,506 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:12:23,606 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:12:53,508 | INFO | AI_Signal_Engine | 
+2026-07-21 16:12:53,508 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:12:53,508 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:12:53,508 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:12:53,592 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:13:23,518 | INFO | AI_Signal_Engine | 
+2026-07-21 16:13:23,518 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:13:23,518 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:13:23,518 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:13:23,596 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:13:53,532 | INFO | AI_Signal_Engine | 
+2026-07-21 16:13:53,532 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:13:53,532 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:13:53,532 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:13:53,617 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:14:23,537 | INFO | AI_Signal_Engine | 
+2026-07-21 16:14:23,537 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:14:23,537 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:14:23,537 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:14:23,615 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:14:53,551 | INFO | AI_Signal_Engine | 
+2026-07-21 16:14:53,551 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:14:53,551 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:14:53,551 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:14:53,643 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:15:23,560 | INFO | AI_Signal_Engine | 
+2026-07-21 16:15:23,561 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:15:23,562 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:15:23,563 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:15:23,646 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:15:53,564 | INFO | AI_Signal_Engine | 
+2026-07-21 16:15:53,565 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:15:53,566 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:15:53,567 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:15:53,667 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:16:23,567 | INFO | AI_Signal_Engine | 
+2026-07-21 16:16:23,569 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:16:23,570 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:16:23,571 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:16:23,724 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:16:53,568 | INFO | AI_Signal_Engine | 
+2026-07-21 16:16:53,568 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:16:53,568 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:16:53,568 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:16:53,646 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:17:23,578 | INFO | AI_Signal_Engine | 
+2026-07-21 16:17:23,579 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:17:23,580 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:17:23,581 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:17:23,663 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:17:53,582 | INFO | AI_Signal_Engine | 
+2026-07-21 16:17:53,583 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:17:53,584 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:17:53,584 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:17:53,667 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:18:23,588 | INFO | AI_Signal_Engine | 
+2026-07-21 16:18:23,588 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:18:23,588 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:18:23,588 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:18:23,671 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:18:53,597 | INFO | AI_Signal_Engine | 
+2026-07-21 16:18:53,597 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:18:53,597 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:18:53,597 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:18:53,675 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:19:23,606 | INFO | AI_Signal_Engine | 
+2026-07-21 16:19:23,607 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:19:23,608 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:19:23,608 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:19:23,699 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:19:53,608 | INFO | AI_Signal_Engine | 
+2026-07-21 16:19:53,609 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:19:53,610 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:19:53,610 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:19:53,704 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:20:23,608 | INFO | AI_Signal_Engine | 
+2026-07-21 16:20:23,609 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:20:23,611 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:20:23,612 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:20:23,705 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:20:53,609 | INFO | AI_Signal_Engine | 
+2026-07-21 16:20:53,609 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:20:53,612 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:20:53,612 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:20:53,714 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:21:23,610 | INFO | AI_Signal_Engine | 
+2026-07-21 16:21:23,610 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:21:23,610 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:21:23,610 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:21:23,705 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:21:53,610 | INFO | AI_Signal_Engine | 
+2026-07-21 16:21:53,610 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:21:53,610 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:21:53,610 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:21:53,706 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:22:23,611 | INFO | AI_Signal_Engine | 
+2026-07-21 16:22:23,612 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:22:23,613 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:22:23,614 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:22:23,694 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:22:53,617 | INFO | AI_Signal_Engine | 
+2026-07-21 16:22:53,617 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:22:53,617 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:22:53,617 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:22:53,702 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:23:08,929 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:08,929 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 16:23:08,944 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:08,944 | INFO | AI_Signal_Engine | Initialization Finished
+2026-07-21 16:23:08,944 | INFO | AI_Signal_Engine | Initializing Components ...
+2026-07-21 16:23:10,100 | INFO | AI_Signal_Engine | Checking Previous Signals...
+2026-07-21 16:23:10,106 | INFO | AI_Signal_Engine | Recovery Finished.
+2026-07-21 16:23:10,107 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,108 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE READY
+2026-07-21 16:23:10,108 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,109 | INFO | AI_Signal_Engine | 
+2026-07-21 16:23:10,109 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,112 | INFO | AI_Signal_Engine | ENGINE STARTED
+2026-07-21 16:23:10,113 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,114 | INFO | AI_Signal_Engine | 
+2026-07-21 16:23:10,114 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,114 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:23:10,115 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:10,179 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:23:40,115 | INFO | AI_Signal_Engine | 
+2026-07-21 16:23:40,115 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:40,115 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:23:40,115 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:23:40,206 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:24:10,116 | INFO | AI_Signal_Engine | 
+2026-07-21 16:24:10,116 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:24:10,117 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:24:10,118 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:24:10,193 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:24:40,129 | INFO | AI_Signal_Engine | 
+2026-07-21 16:24:40,129 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:24:40,129 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:24:40,129 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:24:40,206 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:25:10,137 | INFO | AI_Signal_Engine | 
+2026-07-21 16:25:10,137 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:25:10,137 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:25:10,137 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:25:10,221 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:25:40,144 | INFO | AI_Signal_Engine | 
+2026-07-21 16:25:40,145 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:25:40,146 | INFO | AI_Signal_Engine | Starting Market Scan...
+2026-07-21 16:25:40,147 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:25:40,249 | INFO | AI_Signal_Engine | Cycle Finished.
+2026-07-21 16:53:49,007 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 16:53:49,022 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 16:53:49,022 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 22:33:10,166 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 22:33:10,196 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 22:33:10,196 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 22:33:10,196 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 403, in main
+    engine = AISignalEngine()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 100, in __init__
+    self.dispatcher = MessageDispatcher(
+                      ^^^^^^^^^^^^^^^^^^
+TypeError: MessageDispatcher.__init__() got an unexpected keyword argument 'logger'
+2026-07-21 22:33:10,196 | ERROR | AI_Signal_Engine | Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 403, in main
+    engine = AISignalEngine()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 100, in __init__
+    self.dispatcher = MessageDispatcher(
+                      ^^^^^^^^^^^^^^^^^^
+TypeError: MessageDispatcher.__init__() got an unexpected keyword argument 'logger'
+
+2026-07-21 23:13:21,876 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 23:13:21,876 | INFO | AI_Signal_Engine | AI SIGNAL ENGINE STARTING
+2026-07-21 23:13:21,876 | INFO | AI_Signal_Engine | ======================================================================
+2026-07-21 23:13:21,877 | ERROR | AI_Signal_Engine | Fatal Error
+Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 400, in main
+    engine = AISignalEngine()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 132, in __init__
+    self.signal_engine = SignalEngine(
+                         ^^^^^^^^^^^^^
+TypeError: SignalEngine.__init__() got an unexpected keyword argument 'fibonacci_engine'
+2026-07-21 23:13:21,880 | ERROR | AI_Signal_Engine | Traceback (most recent call last):
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 400, in main
+    engine = AISignalEngine()
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\Utel\Desktop\AI_Signal_Engine\main.py", line 132, in __init__
+    self.signal_engine = SignalEngine(
+                         ^^^^^^^^^^^^^
+TypeError: SignalEngine.__init__() got an unexpected keyword argument 'fibonacci_engine'
+
