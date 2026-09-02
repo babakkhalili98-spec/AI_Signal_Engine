@@ -1,0 +1,45 @@
+{
+  "market": "CRYPTO",
+  "symbol": "BTCUSDT",
+  "timeframe": "1H",
+  "asset_class": "crypto",
+  "indicator_reactions": {
+    "momentum_{}": {
+      "indicator_name": "momentum",
+      "parameters": {},
+      "sample_size": 180,
+      "success_count": 72,
+      "failure_count": 90,
+      "neutral_count": 18,
+      "average_favorable_move": 9.126377743103632,
+      "average_adverse_move": 9.886203563194764,
+      "consistency_score": 0.5,
+      "confidence": "medium_confidence",
+      "last_updated": "2026-08-14T16:13:08.774416"
+    }
+  },
+  "pattern_reactions": {
+    "higher_highs_unknown": {
+      "pattern_name": "higher_highs",
+      "pattern_type": "unknown",
+      "sample_size": 180,
+      "success_count": 72,
+      "failure_count": 90,
+      "average_favorable_move": 9.126377743103632,
+      "average_move_after_pattern": 0.18391181499559864,
+      "confidence": "medium_confidence",
+      "last_updated": "2026-08-14T16:13:08.774420"
+    }
+  },
+  "support_resistance_reactions": {},
+  "total_signals_observed": 180,
+  "overall_success_rate": 0.38333333333333336,
+  "average_volatility": 19.012581306298397,
+  "typical_favorable_move": 9.126377743103632,
+  "typical_adverse_move": 9.886203563194764,
+  "best_market_conditions": [],
+  "worst_market_conditions": [],
+  "created_at": "2026-08-14T16:13:08.759500",
+  "last_updated": "2026-08-14T16:13:08.774610",
+  "version": 1
+}
