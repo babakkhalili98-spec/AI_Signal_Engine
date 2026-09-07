@@ -1,1 +1,30 @@
-Nothing should be output since the only file in the changes is `.gitignore` itself, which doesn't indicate any build artifacts, dependencies, or temporary files that need to be ignored. The addition of `.gitignore` is just the file being tracked in the repository, not a reason to add more ignores.
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+```
