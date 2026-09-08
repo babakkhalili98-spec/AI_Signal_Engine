@@ -3058,7 +3058,7 @@ class GravityScoreEngine:
 
         self.reasons.append(
 
-            f"Nearest Level : {nearest.name}"
+            f"Nearest Level : {nearest.name}")
 # ==========================================================
 # SECTION 9-6
 # MULTI GRAVITY CLUSTER ENGINE
@@ -3237,7 +3237,6 @@ class GravityClusterEngine:
 
         return 0
 
-        )
 
         self.reasons.append(
 
@@ -3279,13 +3278,13 @@ class GravityClusterEngine:
                 self.reasons,
 
         }
-    gravity_result = gravity_engine.calculate(
-        close,
-        gravity_levels,
-    ) 
-
-    gravity_score = gravity_result["score"]
-    internal_score += gravity_score * 0.10
+#     gravity_result = gravity_engine.calculate(
+#         close,
+#         gravity_levels,
+#     ) 
+# 
+#     gravity_score = gravity_result["score"]
+#     internal_score += gravity_score * 0.10
 # ==========================================================
 # SECTION 9-6
 # MULTI GRAVITY CLUSTER ENGINE
@@ -3605,10 +3604,8 @@ class GravityProjectionEngine:
         )
 
         # ------------------------------
+        if close > self.current_level.price:
 
-        if close >
-
-            self.current_level.price:
 
             self.direction = "UP"
 
@@ -3617,10 +3614,7 @@ class GravityProjectionEngine:
                 self.next_level = ordered[idx+1]
 
         # ------------------------------
-
-        elif close <
-
-            self.current_level.price:
+        elif close < self.current_level.price:
 
             self.direction = "DOWN"
 
@@ -4550,45 +4544,42 @@ class IchimokuValidationEngine:
 ]
 
 }
-validator.reset()
-
-validator.validate_candle_count(
-    candles,
-    minimum=52
-)
-
-validator.validate_columns(
-    candles
-)
-
-validator.validate_nan(
-    candles
-)
-
-validator.validate_zero_price(
-    candles
-)
-
-validator.validate_high_low(
-    candles
-)
-
-validator.validate_volume(
-    candles
-)
-
-validator.validate_atr(
-    atr
-)
-
-validator.validate_timeframe(
-    timeframe
-)
-
-validator.finalize()
-if not validator.valid:
-
-    return validator.report()
+# validator.reset()
+# 
+# validator.validate_candle_count(
+#     candles,
+#     minimum=52
+# )
+# 
+# validator.validate_columns(
+#     candles
+# )
+# 
+# validator.validate_nan(
+#     candles
+# )
+# 
+# validator.validate_zero_price(
+#     candles
+# )
+# 
+# validator.validate_high_low(
+#     candles
+# )
+# 
+# validator.validate_volume(
+#     candles
+# )
+# 
+# validator.validate_atr(
+#     atr
+# )
+# 
+# validator.validate_timeframe(
+#     timeframe
+# )
+# 
+# validator.finalize()
 # ==========================================================
 # SECTION 9-11
 # MULTI TIMEFRAME SYNCHRONIZATION ENGINE
@@ -5277,37 +5268,37 @@ class IchimokuConflictEngine:
 
                 self.conflicts,
 
-        }
-{
-
-"penalty":18,
-
-"score":82,
-
-"count":3,
-
-"conflicts":[
-
-"Trend vs Cloud",
-
-"Trend vs Chikou",
-
+#         }
+# {
+# 
+# "penalty":18,
+# 
+# "score":82,
+# 
+# "count":3,
+# 
+# "conflicts":[
+# 
+# "Trend vs Cloud",
+# 
+# "Trend vs Chikou",
+# 
 "Projection vs Gravity"
-
-]
-
-}
-conflict = conflict_engine.report()
-
-internal_score = max(
-
-    0,
-
-    internal_score -
-
-    conflict["penalty"]
-
-)
+# 
+# ]
+# 
+# # }
+# # conflict = conflict_engine.report()
+# # 
+# # internal_score = max(
+# # 
+# #     0,
+# 
+#     internal_score -
+# 
+#     conflict["penalty"]
+# 
+# )
 # ==========================================================
 # SECTION 9-13
 # MARKET PHASE DETECTOR
