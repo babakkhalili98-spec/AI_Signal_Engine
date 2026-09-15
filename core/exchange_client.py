@@ -2,233 +2,346 @@
 =========================================================
 AI Signal Engine
 Exchange Client
-Version : 4.0
+Version : 5.0
 =========================================================
 
 Exchange Gateway
 
 تمام ارتباط موتور با صرافی از این کلاس انجام می‌شود.
 
-در آینده فقط Provider عوض می‌شود
-و هیچ قسمت دیگری از موتور تغییر نمی‌کند.
+Engine های پروژه نباید مستقیماً Provider را بشناسند.
 
-Supported Providers
+Provider از طریق:
+    ExchangeClient(provider=...)
 
-- Nobitex
+انتخاب می‌شود.
+
+نمونه:
+
+    ExchangeClient()
+
+یا:
+
+    ExchangeClient("TABDEAL")
+
+یا:
+
+    ExchangeClient("NOBITEX")
 =========================================================
 """
 
 from __future__ import annotations
 
 import logging
-from typing import Any
+import os
+from typing import Any, Dict, List, Optional
 
+from providers.base_provider import BaseProvider
 from providers.nobitex_provider import NobitexProvider
+
+try:
+    from providers.tabdeal_provider import TabdealProvider
+except ImportError:
+    TabdealProvider = None
 
 
 class ExchangeClient:
-
     """
-    Exchange Gateway
+    لایه Gateway بین Engine و Exchange Provider.
     """
 
-    # -------------------------------------------------
+    # =====================================================
+    # INIT
+    # =====================================================
 
-    def __init__(self):
-
-        self.logger = logging.getLogger(
-            "ExchangeClient"
-        )
-
-        self.provider = NobitexProvider()
+    def __init__(
+        self,
+        provider: Optional[Any] = None,
+        exchange_name: Optional[str] = None,
+    ):
+        self.logger = logging.getLogger("ExchangeClient")
 
         self.connected = False
 
-    # -------------------------------------------------
-    # Connect
-    # -------------------------------------------------
+        # -------------------------------------------------
+        # Provider object مستقیم
+        # -------------------------------------------------
+
+        if provider is not None:
+
+            if not hasattr(provider, "get_ohlcv"):
+                raise TypeError(
+                    "Provider must implement get_ohlcv()"
+                )
+
+            self.provider = provider
+
+        else:
+
+            name = (
+                exchange_name
+                or os.getenv("EXCHANGE_NAME")
+                or "NOBITEX"
+            )
+
+            self.provider = self._create_provider(name)
+
+        self.logger.info(
+            "ExchangeClient initialized | provider=%s",
+            self.provider_name,
+        )
+
+    # =====================================================
+    # PROVIDER FACTORY
+    # =====================================================
+
+    def _create_provider(self, exchange_name: str) -> BaseProvider:
+        """
+        ساخت Provider بر اساس نام صرافی.
+        """
+
+        name = str(exchange_name).strip().upper()
+
+        if name in {
+            "TABDEAL",
+            "TABAADOL",
+            "TABADOL",
+            "تبدیل",
+        }:
+
+            if TabdealProvider is None:
+                raise ImportError(
+                    "TabdealProvider is not available."
+                )
+
+            return TabdealProvider()
+
+        if name in {
+            "NOBITEX",
+            "NOBITEX_PROVIDER",
+        }:
+
+            return NobitexProvider()
+
+        raise ValueError(
+            f"Unsupported exchange provider: {exchange_name}"
+        )
+
+    # =====================================================
+    # CONNECT
+    # =====================================================
 
     def connect(self) -> bool:
-
         """
-        اتصال به Provider
+        اتصال به Provider.
         """
 
         try:
 
-            self.connected = self.provider.ping()
+            self.connected = bool(
+                self.provider.ping()
+            )
 
             if self.connected:
 
                 self.logger.info(
-                    "Connected To Nobitex"
+                    "Connected | provider=%s",
+                    self.provider_name,
                 )
 
             else:
 
                 self.logger.error(
-                    "Connection Failed"
+                    "Connection failed | provider=%s",
+                    self.provider_name,
                 )
 
             return self.connected
 
-        except Exception as e:
+        except Exception:
 
             self.connected = False
 
-            self.logger.exception(e)
+            self.logger.exception(
+                "Exchange connection failed"
+            )
 
             return False
 
-    # -------------------------------------------------
-    # Disconnect
-    # -------------------------------------------------
+    # =====================================================
+    # DISCONNECT
+    # =====================================================
 
-    def disconnect(self):
-
+    def disconnect(self) -> None:
         """
-        قطع ارتباط
+        قطع ارتباط.
         """
 
         try:
 
-            if hasattr(
+            close_method = getattr(
                 self.provider,
-                "close"
-            ):
+                "close",
+                None,
+            )
 
-                self.provider.close()
+            if callable(close_method):
+                close_method()
+
+        except Exception:
+
+            self.logger.exception(
+                "Provider close failed"
+            )
 
         finally:
 
             self.connected = False
 
-    # -------------------------------------------------
-    # Reconnect
-    # -------------------------------------------------
+    # =====================================================
+    # RECONNECT
+    # =====================================================
 
-    def reconnect(self):
+    def reconnect(self) -> bool:
 
         self.disconnect()
 
         return self.connect()
 
-    # -------------------------------------------------
-    # Ping
-    # -------------------------------------------------
+    # =====================================================
+    # PING
+    # =====================================================
 
-    def ping(self):
+    def ping(self) -> bool:
 
-        return self.provider.ping()
+        try:
 
-    # -------------------------------------------------
-    # Health
-    # -------------------------------------------------
+            return bool(
+                self.provider.ping()
+            )
 
-    def health_check(self):
+        except Exception:
+
+            self.logger.exception(
+                "Provider ping failed"
+            )
+
+            return False
+
+    # =====================================================
+    # HEALTH
+    # =====================================================
+
+    def health_check(self) -> Dict[str, Any]:
+
+        ping_result = self.ping()
+
+        try:
+            server_time = (
+                self.provider.get_server_time()
+            )
+        except Exception:
+            server_time = None
 
         return {
-
-            "provider":
-                self.provider.__class__.__name__,
-
-            "connected":
-                self.connected,
-
-            "ping":
-                self.ping(),
-
-            "server_time":
-                self.provider.get_server_time(),
-
+            "provider": self.provider_name,
+            "connected": self.connected,
+            "ping": ping_result,
+            "server_time": server_time,
         }
-    # -------------------------------------------------
-    # Symbols
-    # -------------------------------------------------
 
-    def symbols(self):
+    # =====================================================
+    # SYMBOLS
+    # =====================================================
 
-        """
-        لیست نمادها
-        """
+    def symbols(self) -> List[str]:
 
         return self.provider.get_symbols()
 
-    # Alias
     get_symbols = symbols
 
-    # -------------------------------------------------
-    # Ticker
-    # -------------------------------------------------
+    # =====================================================
+    # TICKER
+    # =====================================================
 
     def ticker(
         self,
         symbol: str,
-    ) -> dict:
+    ) -> Dict[str, Any]:
 
-        """
-        اطلاعات لحظه‌ای بازار
-        """
+        return self.provider.get_ticker(
+            symbol
+        )
 
-        return self.provider.get_ticker(symbol)
-
-    # Alias
     get_ticker = ticker
 
-    # -------------------------------------------------
-    # Last Price
-    # -------------------------------------------------
+    # =====================================================
+    # LAST PRICE
+    # =====================================================
 
     def last_price(
         self,
         symbol: str,
-    ) -> float | None:
+    ) -> Optional[float]:
 
-        """
-        آخرین قیمت معامله
-        """
-
-        ticker = self.provider.get_ticker(symbol)
+        ticker = self.provider.get_ticker(
+            symbol
+        )
 
         if not ticker:
             return None
 
-        return ticker.get("last")
+        value = ticker.get("last")
 
-    # Alias
+        if value is None:
+            value = ticker.get("price")
+
+        if value is None:
+            return None
+
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return None
+
     get_last_price = last_price
 
-    # -------------------------------------------------
-    # OrderBook
-    # -------------------------------------------------
+    # =====================================================
+    # ORDER BOOK
+    # =====================================================
 
     def orderbook(
         self,
         symbol: str,
-    ) -> dict:
+        limit: int = 50,
+    ) -> Dict[str, Any]:
 
-        """
-        دفتر سفارشات
-        """
+        try:
 
-        return self.provider.get_orderbook(symbol)
+            return self.provider.get_orderbook(
+                symbol=symbol,
+                limit=limit,
+            )
 
-    # Alias
+        except TypeError:
+
+            # سازگاری با Provider های قدیمی
+            return self.provider.get_orderbook(
+                symbol
+            )
+
     get_orderbook = orderbook
-    # -------------------------------------------------
+
+    # =====================================================
     # OHLCV
-    # -------------------------------------------------
+    # =====================================================
 
     def ohlcv(
         self,
         symbol: str,
         timeframe: str = "15m",
         limit: int = 500,
-    ) -> list:
-
-        """
-        دریافت کندل‌ها
-        """
+    ) -> List[Dict[str, Any]]:
 
         return self.provider.get_ohlcv(
             symbol=symbol,
@@ -236,23 +349,37 @@ class ExchangeClient:
             limit=limit,
         )
 
-    # Alias
     get_ohlcv = ohlcv
 
-    # -------------------------------------------------
+    # =====================================================
+    # KLINES
+    # =====================================================
+
+    def klines(
+        self,
+        symbol: str,
+        timeframe: str = "15m",
+        limit: int = 500,
+    ) -> List[Dict[str, Any]]:
+
+        return self.provider.get_klines(
+            symbol=symbol,
+            timeframe=timeframe,
+            limit=limit,
+        )
+
+    get_klines = klines
+
+    # =====================================================
     # OHLC
-    # -------------------------------------------------
+    # =====================================================
 
     def ohlc(
         self,
         symbol: str,
         timeframe: str = "15m",
         limit: int = 500,
-    ) -> list:
-
-        """
-        سازگاری با نسخه‌های قدیمی
-        """
+    ) -> List[Dict[str, Any]]:
 
         return self.provider.get_ohlcv(
             symbol=symbol,
@@ -260,204 +387,214 @@ class ExchangeClient:
             limit=limit,
         )
 
-    # Alias
     get_ohlc = ohlc
 
-    # -------------------------------------------------
-    # Server Time
-    # -------------------------------------------------
+    # =====================================================
+    # SERVER TIME
+    # =====================================================
 
-    def server_time(self):
-
-        """
-        زمان سرور
-        """
+    def server_time(self) -> int:
 
         return self.provider.get_server_time()
 
-    # Alias
     get_server_time = server_time
 
-    # -------------------------------------------------
-    # Provider Info
-    # -------------------------------------------------
+    # =====================================================
+    # PROVIDER INFO
+    # =====================================================
 
-    def provider_info(self):
+    def provider_info(self) -> Dict[str, Any]:
 
-        """
-        اطلاعات Provider
-        """
+        info_method = getattr(
+            self.provider,
+            "info",
+            None,
+        )
 
-        if hasattr(self.provider, "info"):
+        if callable(info_method):
 
-            return self.provider.info()
+            try:
+                return info_method()
+            except Exception:
+                self.logger.exception(
+                    "Provider info failed"
+                )
 
         return {
-
-            "name": self.provider.__class__.__name__,
-
+            "name": self.provider_name,
             "connected": self.connected,
-
         }
-    # -------------------------------------------------
-    # Balance
-    # -------------------------------------------------
+
+    # =====================================================
+    # BALANCE
+    # =====================================================
 
     def balance(self):
 
-        """
-        موجودی حساب
-        """
+        method = getattr(
+            self.provider,
+            "get_balance",
+            None,
+        )
 
-        if hasattr(self.provider, "get_balance"):
+        if not callable(method):
 
-            return self.provider.get_balance()
+            raise NotImplementedError(
+                "Provider does not support get_balance()"
+            )
 
-        return None
+        return method()
 
-    # Alias
     get_balance = balance
 
-    # -------------------------------------------------
-    # Positions
-    # -------------------------------------------------
+    # =====================================================
+    # POSITIONS
+    # =====================================================
 
     def positions(self):
 
-        """
-        معاملات باز
-        """
-
-        if hasattr(self.provider, "get_positions"):
-
-            return self.provider.get_positions()
-
-        return []
-
-    # Alias
-    get_positions = positions
-
-    # -------------------------------------------------
-    # Open Orders
-    # -------------------------------------------------
-
-    def open_orders(self):
-
-        """
-        سفارش‌های باز
-        """
-
-        if hasattr(self.provider, "get_open_orders"):
-
-            return self.provider.get_open_orders()
-
-        return []
-
-    # Alias
-    get_open_orders = open_orders
-
-    # -------------------------------------------------
-    # Cancel Order
-    # -------------------------------------------------
-
-    def cancel_order(self, order_id):
-
-        """
-        لغو سفارش
-        """
-
-        if hasattr(self.provider, "cancel_order"):
-
-            return self.provider.cancel_order(order_id)
-
-        raise NotImplementedError(
-            "Provider does not support cancel_order()"
+        method = getattr(
+            self.provider,
+            "get_positions",
+            None,
         )
 
-    # -------------------------------------------------
-    # Place Order
-    # -------------------------------------------------
+        if not callable(method):
+
+            raise NotImplementedError(
+                "Provider does not support get_positions()"
+            )
+
+        return method()
+
+    get_positions = positions
+
+    # =====================================================
+    # OPEN ORDERS
+    # =====================================================
+
+    def open_orders(
+        self,
+        symbol: Optional[str] = None,
+    ):
+
+        method = getattr(
+            self.provider,
+            "get_open_orders",
+            None,
+        )
+
+        if not callable(method):
+
+            raise NotImplementedError(
+                "Provider does not support "
+                "get_open_orders()"
+            )
+
+        try:
+            return method(symbol=symbol)
+        except TypeError:
+            return method(symbol)
+
+    get_open_orders = open_orders
+
+    # =====================================================
+    # CANCEL ORDER
+    # =====================================================
+
+    def cancel_order(
+        self,
+        order_id: Any,
+        symbol: Optional[str] = None,
+    ):
+
+        method = getattr(
+            self.provider,
+            "cancel_order",
+            None,
+        )
+
+        if not callable(method):
+
+            raise NotImplementedError(
+                "Provider does not support "
+                "cancel_order()"
+            )
+
+        try:
+            return method(
+                order_id=order_id,
+                symbol=symbol,
+            )
+        except TypeError:
+            return method(order_id)
+
+    # =====================================================
+    # PLACE ORDER
+    # =====================================================
 
     def place_order(self, **kwargs):
 
-        """
-        ثبت سفارش
-        """
-
-        if hasattr(self.provider, "place_order"):
-
-            return self.provider.place_order(**kwargs)
-
-        raise NotImplementedError(
-            "Provider does not support place_order()"
+        method = getattr(
+            self.provider,
+            "place_order",
+            None,
         )
-    # -------------------------------------------------
-    # Shutdown
-    # -------------------------------------------------
 
-    def shutdown(self):
+        if not callable(method):
 
-        """
-        خاموش کردن Client
-        """
+            raise NotImplementedError(
+                "Provider does not support "
+                "place_order()"
+            )
 
-        try:
+        return method(**kwargs)
 
-            self.disconnect()
+    # =====================================================
+    # SHUTDOWN
+    # =====================================================
 
-        except Exception as e:
+    def shutdown(self) -> None:
 
-            self.logger.exception(e)
+        self.disconnect()
 
         self.logger.info(
             "Exchange Client Closed"
         )
 
-    # -------------------------------------------------
-    # Status
-    # -------------------------------------------------
+    # =====================================================
+    # STATUS
+    # =====================================================
 
     @property
     def is_connected(self) -> bool:
 
-        """
-        وضعیت اتصال
-        """
-
         return self.connected
 
-    # -------------------------------------------------
-    # Provider Name
-    # -------------------------------------------------
+    # =====================================================
+    # PROVIDER NAME
+    # =====================================================
 
     @property
     def provider_name(self) -> str:
 
-        """
-        نام Provider
-        """
-
         return self.provider.__class__.__name__
 
-    # -------------------------------------------------
-    # String
-    # -------------------------------------------------
+    # =====================================================
+    # REPRESENTATION
+    # =====================================================
 
-    def __repr__(self):
+    def __repr__(self) -> str:
 
         return (
-
             f"<ExchangeClient "
-
             f"provider={self.provider_name} "
-
             f"connected={self.connected}>"
-
         )
 
-    # -------------------------------------------------
-    # Context Manager
-    # -------------------------------------------------
+    # =====================================================
+    # CONTEXT MANAGER
+    # =====================================================
 
     def __enter__(self):
 
@@ -466,15 +603,10 @@ class ExchangeClient:
         return self
 
     def __exit__(
-
         self,
-
         exc_type,
-
         exc_val,
-
         exc_tb,
-
     ):
 
         self.shutdown()
